@@ -1,0 +1,472 @@
+﻿/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+  Created on : 27.02.2016, 18:11:28
+  Author  : Метточки, Akiyamka
+*/
+p, a, h1, h2, h3 {
+  font-family: 'Verdana';
+  font-weight: normal;
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 34px;
+  margin-bottom: 35px;
+  line-height : 42px;
+}
+
+#hider {display: none;}
+
+#header {
+  background-color:#5DB7A6;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 250px;
+}
+
+#header .logo {
+  margin: 22% 10% 8% 10%;
+  width: 80%;
+  float: right;
+}
+
+#header .logo img {
+  display: block;
+  margin: 0 auto;
+  max-height: 100px;
+}
+
+#menu {
+  width: 100%;
+  background-color: rgba(0,0,0,0.2);
+	border-bottom: solid #565656 1px;
+  overflow: hidden;
+  display: none;
+}
+
+#menu > ul {
+  width: 60%;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+#menu > ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+#menu > ul li a {
+  position: relative;
+  bottom: -1px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 30px 0;
+  border-bottom: solid #565656 1px;
+  font-size: 14px;
+}
+
+#menu > ul li a:hover {
+  color: #FF8811;
+}
+
+/*Mobile menu*/
+
+#menu_mobile {
+  display: block;
+  background-color: rgba(93, 183, 166, 0.6);
+  position: fixed;
+  z-index: 999;
+  overflow: hidden;
+}
+
+#menu_mobile:hover {
+  background-color: rgba(93, 183, 166, 1);
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.13);
+}
+
+#menu_mobile .sub-menu {
+  display: none;
+
+}
+
+/*#menu_mobile .main-item:focus ~ .sub-menu,
+#menu_mobile .main-item:active ~ .sub-menu,
+#menu_mobile .sub-menu:hover {
+   display: block;
+}*/
+
+#menu_mobile .button > img {
+  height: 30px;
+  float:left;
+  padding: 15px;
+}
+
+
+#menu_mobile a:focus {
+    outline: none;
+}
+
+
+#menu_mobile ul {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+#menu_mobile li {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 20px;
+  color: #fff;
+}
+
+#menu_mobile li:hover {
+  display: block;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #FF8811;
+}
+
+#menu_mobile a {
+  display: block;
+  color: inherit;;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#goup {
+  display: none;
+}
+
+#goup:hover {
+  opacity: 1;
+}
+
+#servises {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 88%;
+  max-width: 940px;
+  margin: 0 auto 24px;
+  color: #fff;
+}
+
+#servises > div {
+  position: relative;
+  width: 100%;
+	margin: 18px auto;
+  overflow: hidden;
+  z-index: 2;
+  max-height: 90px;
+}
+
+#servises > div > div {
+  width: 12%;
+  margin: 0 5%;
+  /*height: 90px;*/
+  float: left;
+  overflow: hidden;
+  display: none
+}
+
+#servises p {
+  overflow: hidden;
+  text-align: left;
+  font-size: 14px;
+  padding-left: 16px;
+}
+
+.tobottom {
+ display: none;
+}
+
+#hcontacts {
+  color: #fff;
+  padding: 30px 0 30px 0;
+  background-color: rgba(0,0,0,0.1);
+  margin-top: 40px;
+  line-height: 1.4;
+  font-size: 14px;
+  text-align: center;
+}
+
+#hcontacts h3 {
+  font-size: 18px;
+  padding-bottom: 12px;
+}
+
+.clear {
+  clear: both;
+}
+
+.block {
+  padding: 50px 12%;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1020px;
+}
+
+.block > .sector {
+  width: 100%;
+  max-width: 480px;
+}
+
+#block_reason {
+  background-color: #F0F0F0;
+}
+
+#block_reason h1 {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 50px 10%;
+  font-size: 24px;
+}
+
+#block_reason > div {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1020px;
+}
+
+#block_reason > div > div {
+}
+
+#block_reason .reason {
+  margin: 0 20%;
+  text-align: center;
+   margin-bottom: 80px;
+}
+
+#block_reason img {
+  display: block;
+  margin: 0 auto;
+  max-height: 147px;
+}
+
+#block_reason h3 {
+  font-size: 22px;
+  margin: 14px 0;
+}
+
+#block_reason p {
+  font-size: 13px;
+  line-height : 20px;
+  color : #5E5E5E;
+}
+
+#block_vk {
+  background-color: #85C9C4;
+  color:#DEFFFD;
+  line-height: 30px;
+  background-image: url(images/back_soc.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#block_vk img {
+  display: none;
+}
+
+#block_vk > div div {
+  width: 100%;
+  max-width: 480px;
+}
+
+#block_vk h1 {
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 35px;
+  line-height : 42px;
+}
+
+#block_vk a {
+  display: block;
+  color: #fff;
+  padding: 20px 0;
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
+}
+
+#block_vk a:hover {
+  background-color: #fff;
+  display: block;
+  color: #85C9C4;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
+}
+
+#block_map {
+  color: #5E5E5E;
+  overflow: hidden;
+  background-image: url(images/midmap.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#block_map h1 {
+  color: #000;
+  font-size: 34px;
+  margin-bottom: 35px;
+  line-height : 42px;
+}
+
+#block_map p {
+  line-height : 30px;
+}
+
+#block_map a {
+  color: #5E5E5E;
+}
+
+#block_map a:hover {
+  color: #FF8811;
+}
+
+#block_map .lHalf {
+  width: 100%;
+}
+
+#block_map .mapLink {
+  width: 50%;
+  margin: 30px 0 20px 0;
+  float: left;
+  text-align: center;
+}
+
+#block_map .mapLink img {
+  width: 70%;
+  margin-bottom: 16px;
+}
+
+#block_map .gradient {
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 100%);
+}
+
+#block_map .sector > img {
+  display: none;
+}
+
+#block_broken {
+  color: #fff;
+  background-color: #E8A646;
+}
+
+#block_broken h1 {
+  font-size: 34px;
+  margin-bottom: 35px;
+  line-height : 42px;
+}
+
+#block_broken img {
+  display: block;
+  width: 70%;
+}
+
+#block_broken p {
+  line-height : 30px;
+}
+
+#block_broken .RHalf {
+  display: table-cell;
+	vertical-align: middle;
+  height: 300px;
+}
+
+#block_broken .sector > img {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+#footer {
+  background-color: #85C9C4;
+  color:#DEFFFD;
+  line-height: 30px;
+}
+
+#footer .block {
+  padding: 50px 12%;
+}
+
+#footer .sectorL, .sectorR, .sectorM {
+  width: 100%;
+}
+
+#footer .sectorL {
+    margin: 0 0 25px 0;
+}
+
+#footer .sectorM {
+  padding: 0 5%;
+}
+
+/*SVG STYLES*/
+
+.st0 {
+  fill:#EAEAEA;
+}
+
+.st1 {
+  fill:none;
+  stroke:#5ACCB6;
+  stroke-width:4;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
+}
+
+.st2 {
+  fill:none;
+  stroke:#5ACCB6;
+  stroke-width:4;
+  stroke-miterlimit:10;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
+}
+
+g:hover .st1 {
+  stroke:#F79F2B;
+  stroke-width:5;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
+}
+
+g:hover .st2 {
+  stroke:#F79F2B;
+  stroke-width:5;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
+}
+
+@media all and (max-width: 900px) {
+  #block_broken .RHalf {display: block; height: auto;}
+}

@@ -465,3 +465,43 @@ g:hover .st2 {
 @media all and (max-width: 900px) {
   #block_broken .RHalf {display: block; height: auto;}
 }
+
+social-btn {
+  display: flex;
+  flex-flow: column nowrap;
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background-color: white;
+  text-align: center;
+  height: 64px;
+  overflow: hidden;
+  transition: height .3s ease;
+  border-radius: 32px;
+  box-shadow: 0px 0px 0px 3px rgba(255,255,255,1);
+}
+
+.social-btn a {
+  text-decoration: none;
+  display: block;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  transition: color .4s linear;
+  color: #85C9C4
+}
+
+.social-btn a:hover {
+  color: #FBB234;
+}
+
+
+.social-btn:hover {
+  height: 192px
+}
+
+.social-btn:hover a:first-child {
+  display: none;
+  overflow: hidden;
+}

@@ -466,7 +466,7 @@ g:hover .st2 {
   #block_broken .RHalf {display: block; height: auto;}
 }
 
-social-btn {
+.social-btn {
   display: flex;
   flex-flow: column nowrap;
   position: fixed;

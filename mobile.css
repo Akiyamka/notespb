@@ -489,7 +489,8 @@ g:hover .st2 {
   flex-shrink: 0;
   border-radius: 32px;
   transition: color .4s linear;
-  color: #85C9C4
+  color: #85C9C4;
+  pointer-events: none;
 }
 
 .social-btn a:hover {
@@ -504,4 +505,9 @@ g:hover .st2 {
 .social-btn:hover a:first-child {
   display: none;
   overflow: hidden;
+}
+
+.social-btn.unlock a {
+  color: #85C9C4;
+  pointer-events: auto;
 }
